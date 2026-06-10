@@ -1,0 +1,298 @@
+/* =============================================================================
+   BookNest — Custom CSS
+   public/assets/css/custom.css
+   -----------------------------------------------------------------------------
+   Uses Bootstrap 5 as the base framework.
+   CSS custom properties (variables) defined in :root control the brand colors.
+   Override Bootstrap defaults where needed to match the BookNest brand.
+   ============================================================================= */
+
+/* ── Design Tokens ─────────────────────────────────────────────────────────── */
+
+:root {
+    --primary:      #2C3E50;   /* Deep navy — brand / navbar */
+    --primary-dark: #1a252f;
+    --accent:       #E67E22;   /* Warm amber — buttons, highlights */
+    --accent-dark:  #d35400;
+    --success:      #27AE60;
+    --danger:       #E74C3C;
+    --warning:      #F39C12;
+    --info:         #2980B9;
+    --bg-light:     #F8F6F0;   /* Warm off-white — page background */
+    --text-dark:    #1A1A2E;
+    --card-shadow:  0 4px 16px rgba(0,0,0,0.08);
+    --radius:       10px;
+}
+
+/* ── Base ───────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+
+body {
+   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+   /* font-family: 'Source Sans 3', 'Segoe UI', sans-serif;*/
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex: 1; }
+
+/* ── Typography ─────────────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, .font-serif {
+   /* font-family: 'Playfair Display', Georgia, serif;*/
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.lead { font-size: 1.1rem; }
+
+/* ── Navbar ─────────────────────────────────────────────────────────────────── */
+.navbar {
+    background-color: var(--primary) !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: opacity 0.2s;
+}
+
+.navbar .nav-link:hover { opacity: 0.8; }
+
+/* ── Buttons ─────────────────────────────────────────────────────────────────── */
+.btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+}
+
+.btn-outline-primary {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+.btn-outline-primary:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.btn-dark-navy {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+.btn-dark-navy:hover {
+    background-color: var(--primary-dark);
+    color: #fff;
+}
+
+/* ── Cards ──────────────────────────────────────────────────────────────────── */
+.card {
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.13); }
+
+/* ── Book Cards ──────────────────────────────────────────────────────────────── */
+.book-card { height: 100%; }
+
+.book-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.book-card .cover-placeholder {
+    height: 220px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius) var(--radius) 0 0;
+    font-size: 3rem;
+    color: rgba(255,255,255,0.4);
+}
+
+/* ── Condition Badges ────────────────────────────────────────────────────────── */
+.badge { font-size: 0.72em; font-weight: 600; letter-spacing: 0.3px; }
+
+.badge-new  { background-color: var(--success)  !important; }
+.badge-fine { background-color: var(--info)    !important; }
+.badge-good { background-color: var(--warning)  !important; color: #1a1a1a !important; }
+.badge-fair { background-color: var(--danger)   !important; }
+
+/* ── Stat / Dashboard Cards ──────────────────────────────────────────────────── */
+.stat-card {
+    border-left: 5px solid var(--accent) !important;
+    border-radius: var(--radius) !important;
+    background: #fff;
+    box-shadow: var(--card-shadow);
+    padding: 1.25rem 1.5rem;
+    transition: transform 0.2s;
+}
+.stat-card:hover { transform: translateY(-2px); }
+
+.stat-card .stat-number { font-size: 2rem; font-weight: 700; color: var(--primary); }
+.stat-card .stat-label  { font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-card .stat-icon   { font-size: 2.5rem; color: var(--accent); opacity: 0.7; }
+
+/* ── Progress Bar ────────────────────────────────────────────────────────────── */
+.progress { height: 12px; border-radius: 6px; background: #e9ecef; }
+.progress-bar {
+    background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+    border-radius: 6px;
+    transition: width 0.6s ease;
+}
+
+/* ── Hero Section ────────────────────────────────────────────────────────────── */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary) 0%, #34495e 60%, #2c3e50 100%);
+    color: #fff;
+    padding: 5rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(230,126,34,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.hero-section h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+.hero-section .lead { opacity: 0.85; font-size: 1.15rem; }
+
+/* ── Search Box ──────────────────────────────────────────────────────────────── */
+#search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    max-height: 380px;
+    overflow-y: auto;
+    border-radius: 0 0 var(--radius) var(--radius);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.search-wrapper { position: relative; }
+
+/* ── Tables ──────────────────────────────────────────────────────────────────── */
+.table { border-radius: var(--radius); overflow: hidden; }
+.table thead { background-color: var(--primary); color: #fff; }
+.table thead th { border: none; font-weight: 600; letter-spacing: 0.3px; }
+.table-hover tbody tr:hover { background-color: rgba(230,126,34,0.06); }
+
+/* ── Section Titles ──────────────────────────────────────────────────────────── */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    margin-bottom: 0.35rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+/* ── Alerts ──────────────────────────────────────────────────────────────────── */
+.alert { border: none; border-radius: var(--radius); font-weight: 500; }
+.alert-success { background: #d4edda; color: #155724; }
+.alert-danger  { background: #f8d7da; color: #721c24; }
+.alert-warning { background: #fff3cd; color: #856404; }
+.alert-info    { background: #d1ecf1; color: #0c5460; }
+
+/* ── Sidebar Navigation ──────────────────────────────────────────────────────── */
+.sidebar { background: #fff; border-radius: var(--radius); box-shadow: var(--card-shadow); }
+.sidebar .nav-link { color: var(--text-dark); border-radius: 8px; margin-bottom: 4px; padding: 0.6rem 1rem; }
+.sidebar .nav-link:hover { background: rgba(230,126,34,0.1); color: var(--accent); }
+.sidebar .nav-link.active { background: var(--accent); color: #fff !important; }
+
+/* ── Locked Discussion Thread ────────────────────────────────────────────────── */
+.discussion-locked { opacity: 0.45; pointer-events: none; filter: grayscale(80%); }
+
+/* ── Staff Pick Ribbon ───────────────────────────────────────────────────────── */
+.staff-pick-ribbon {
+    position: absolute;
+    top: 12px;
+    right: -8px;
+    background: var(--accent);
+    color: #fff;
+    padding: 3px 14px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 3px 0 0 3px;
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────────────── */
+footer {
+    background-color: var(--primary);
+    color: #adb5bd;
+    padding: 2.5rem 0 1.5rem;
+    margin-top: auto;
+}
+
+footer h6 { color: #fff; font-weight: 700; margin-bottom: 0.75rem; }
+footer a { color: #adb5bd; text-decoration: none; transition: color 0.2s; }
+footer a:hover { color: var(--accent); }
+
+/* ── Utility Classes ─────────────────────────────────────────────────────────── */
+.text-accent  { color: var(--accent) !important; }
+.bg-accent    { background-color: var(--accent) !important; }
+.bg-navy      { background-color: var(--primary) !important; }
+.text-navy    { color: var(--primary) !important; }
+.rounded-xl   { border-radius: var(--radius) !important; }
+.shadow-sm-custom { box-shadow: var(--card-shadow) !important; }
+
+/* ── Animations ──────────────────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up { animation: fadeInUp 0.4s ease both; }
+
+/* Stagger delay for card grids */
+.fade-in-up:nth-child(1) { animation-delay: 0.05s; }
+.fade-in-up:nth-child(2) { animation-delay: 0.10s; }
+.fade-in-up:nth-child(3) { animation-delay: 0.15s; }
+.fade-in-up:nth-child(4) { animation-delay: 0.20s; }
+.fade-in-up:nth-child(5) { animation-delay: 0.25s; }
+.fade-in-up:nth-child(6) { animation-delay: 0.30s; }
+
+/* ── Responsive ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .hero-section { padding: 3rem 0 2.5rem; }
+    .stat-card .stat-number { font-size: 1.5rem; }
+}
