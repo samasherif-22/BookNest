@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📚 BookNest
+# BookNest
 
 A modern full-stack web application for managing books, reading clubs, events, and online book communities.
 
