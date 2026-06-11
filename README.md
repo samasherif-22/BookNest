@@ -7,7 +7,7 @@ A modern full-stack web application for managing books, reading clubs, events, a
 </div>
 
 ---
-
+![BookNest Preview](docs/screeshots/bookNest.png)
 ## ✨ Overview
 
 **BookNest** is a university-level full-stack project designed to simulate a real-world digital reading platform where users can explore books, join clubs, participate in events, and interact through a structured role-based system.
