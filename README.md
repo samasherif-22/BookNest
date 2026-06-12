@@ -59,6 +59,13 @@ It follows a clean **MVC architecture** with a focus on scalability, maintainabi
 - Handle reports and disputes
 ---
 
+🔍 Search System
+- Search books by title and author
+- AJAX Live Search
+- Autocomplete search suggestions
+- Real-time search results without page reload
+---
+
 ## 🧱 Tech Stack
 
 - PHP (MVC Architecture)
