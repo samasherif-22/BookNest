@@ -15,6 +15,12 @@ A modern full-stack web application for managing books, reading clubs, events, a
 It follows a clean **MVC architecture** with a focus on scalability, maintainability, and real-world system design.
 
 ---
+## 🎥 Project Walkthrough
+
+▶️ Watch Full Demo:
+https://github.com/samasherif-22/BookNest/releases/tag/v1.0
+
+---
 ## Features
 
 👤 **Authentication System**
