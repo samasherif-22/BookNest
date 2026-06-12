@@ -15,7 +15,7 @@ A modern full-stack web application for managing books, reading clubs, events, a
 It follows a clean **MVC architecture** with a focus on scalability, maintainability, and real-world system design.
 
 ---
-🚀 Features
+## Features
 
 👤 Authentication System
 - User registration and login
