@@ -15,73 +15,49 @@ A modern full-stack web application for managing books, reading clubs, events, a
 It follows a clean **MVC architecture** with a focus on scalability, maintainability, and real-world system design.
 
 ---
-🚀 Project Goals & Features
+🚀 Features
 
-The BookNest system aims to build a unified digital ecosystem for independent bookstores and readers, focusing on discovery, community engagement, and seamless online-to-offline interactions.
-
----
-
-👤 Authentication & Role Management
-- User registration and secure login system
-- Session-based authentication with password hashing
-- Role-based access control:
-  - Admin
-  - Reader
-  - Author
-  - Organizer
-  - Store Owner
+👤 Authentication System
+- User registration and login
+- Secure session handling
+- Role-based access control (Admin / Reader / Author / Organizer / Store Owner)
 
 ---
 
-📖 Books Management Module
-- Add, edit, and delete books (Admin / Store Owner)
-- Upload and manage book covers
-- View detailed book information
-- Browse books by categories, authors, and stores
-- Basic inventory tracking per bookstore
+📖 Books Management
+- Add, edit, and delete books
+- Upload book covers
+- View book details
+- Browse and search books
 
 ---
 
-🏛️ Clubs & Community System
+🏛️ Clubs System
 - Create and join reading clubs
-- Manage club members and roles
-- Discussion threads within clubs
-- Reading progress tracking (basic simulation)
-- Private and public club visibility
+- Club member management
+- Basic discussions inside clubs
 
 ---
 
-📅 Events Management System
-- Create and manage reading events and book signings
-- Join events with registration system
-- Event capacity control
-- Event lobby and attendance verification (QR / code simulation)
-- Event notifications and reminders
+📅 Events System
+- Create reading events and book signings
+- Join events
+- Basic event management and attendance flow
 
 ---
 
-🛒 Orders & Checkout System
+🛒 Orders System
 - Shopping cart functionality
-- Multi-book checkout process
-- Order creation and tracking
-- Order history per user
-- Basic multi-store order splitting (if applicable)
+- Checkout process
+- Order history tracking
 
 ---
 
-🛠️ Admin & Control Panel
-- Manage users, books, and stores
-- Approve or reject bookstore registrations
-- Handle user reports and disputes
-- Monitor platform activity
-- Basic system analytics (orders, users, events)
-
+🛠️ Admin Panel
+- Manage users and content
+- Manage books and clubs
+- Handle reports and disputes
 ---
-
-📌 Additional Notes
-- All advanced features (recommendation, routing, etc.) are implemented using simplified logic for academic purposes.
-- System follows MVC architecture and OOP principles.
-- Focus is on modularity, scalability, and clarity of design.
 
 ## 🚀 Features
 
