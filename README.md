@@ -15,15 +15,73 @@ A modern full-stack web application for managing books, reading clubs, events, a
 It follows a clean **MVC architecture** with a focus on scalability, maintainability, and real-world system design.
 
 ---
-## Project Goals
-- Support independent bookstores through a shared digital platform
-- Enable local pickup and online ordering (O2O model)
-- Build reader communities through book clubs
-- Manage literary events and book signings
-- Provide recommendation-based discovery system
-- Ensure multi-vendor inventory synchronization
+🚀 Project Goals & Features
+
+The BookNest system aims to build a unified digital ecosystem for independent bookstores and readers, focusing on discovery, community engagement, and seamless online-to-offline interactions.
 
 ---
+
+👤 Authentication & Role Management
+- User registration and secure login system
+- Session-based authentication with password hashing
+- Role-based access control:
+  - Admin
+  - Reader
+  - Author
+  - Organizer
+  - Store Owner
+
+---
+
+📖 Books Management Module
+- Add, edit, and delete books (Admin / Store Owner)
+- Upload and manage book covers
+- View detailed book information
+- Browse books by categories, authors, and stores
+- Basic inventory tracking per bookstore
+
+---
+
+🏛️ Clubs & Community System
+- Create and join reading clubs
+- Manage club members and roles
+- Discussion threads within clubs
+- Reading progress tracking (basic simulation)
+- Private and public club visibility
+
+---
+
+📅 Events Management System
+- Create and manage reading events and book signings
+- Join events with registration system
+- Event capacity control
+- Event lobby and attendance verification (QR / code simulation)
+- Event notifications and reminders
+
+---
+
+🛒 Orders & Checkout System
+- Shopping cart functionality
+- Multi-book checkout process
+- Order creation and tracking
+- Order history per user
+- Basic multi-store order splitting (if applicable)
+
+---
+
+🛠️ Admin & Control Panel
+- Manage users, books, and stores
+- Approve or reject bookstore registrations
+- Handle user reports and disputes
+- Monitor platform activity
+- Basic system analytics (orders, users, events)
+
+---
+
+📌 Additional Notes
+- All advanced features (recommendation, routing, etc.) are implemented using simplified logic for academic purposes.
+- System follows MVC architecture and OOP principles.
+- Focus is on modularity, scalability, and clarity of design.
 
 ## 🚀 Features
 
