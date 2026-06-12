@@ -66,7 +66,7 @@ It follows a clean **MVC architecture** with a focus on scalability, maintainabi
 - Real-time search results without page reload
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - PHP (MVC Architecture)
 - MySQL
