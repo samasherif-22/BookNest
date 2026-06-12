@@ -17,7 +17,13 @@ It follows a clean **MVC architecture** with a focus on scalability, maintainabi
 ---
 ## 🎥 Project Walkthrough
 
-[![▶ Watch Demo](https://img.shields.io/badge/▶-Watch%20Demo-red?style=for-the-badge)](https://github.com/samasherif-22/BookNest/releases/tag/v1.0)
+[![▶ Watch Demo](docs/screenshots/demo.png)](https://github.com/samasherif-22/BookNest/releases/tag/v1.0)
+
+<p align="center">
+  <a href="https://github.com/samasherif-22/BookNest/releases/tag/v1.0">
+    <img src="https://img.shields.io/badge/▶%20PLAY%20VIDEO-Click%20Here-red?style=for-the-badge">
+  </a>
+</p>
 
 ---
 ## Features
