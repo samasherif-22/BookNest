@@ -17,14 +17,14 @@ It follows a clean **MVC architecture** with a focus on scalability, maintainabi
 ---
 ## Features
 
-👤 Authentication System
+👤 **Authentication System**
 - User registration and login
 - Secure session handling
 - Role-based access control (Admin / Reader / Author / Organizer / Store Owner)
 
 ---
 
-📖 Books Management
+📖 **Books Management**
 - Add, edit, and delete books
 - Upload book covers
 - View book details
@@ -32,28 +32,28 @@ It follows a clean **MVC architecture** with a focus on scalability, maintainabi
 
 ---
 
-🏛️ Clubs System
+🏛️ **Clubs System**
 - Create and join reading clubs
 - Club member management
 - Basic discussions inside clubs
 
 ---
 
-📅 Events System
+📅 **Events System**
 - Create reading events and book signings
 - Join events
 - Basic event management and attendance flow
 
 ---
 
-🛒 Orders System
+🛒 **Orders System**
 - Shopping cart functionality
 - Checkout process
 - Order history tracking
 
 ---
 
-🛠️ Admin Panel
+🛠️ **Admin Panel**
 - Manage users and content
 - Manage books and clubs
 - Handle reports and disputes
