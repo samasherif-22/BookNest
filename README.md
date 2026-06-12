@@ -20,7 +20,7 @@ It follows a clean **MVC architecture** with a focus on scalability, maintainabi
 👤 **Authentication System**
 - User registration and login
 - Secure session handling
-- Role-based access control (Admin / Reader / Author / Organizer / Store Owner)
+- Role-based access control (Admin / Reader / Author / Club Organizer / BookStore Owner)
 
 ---
 
